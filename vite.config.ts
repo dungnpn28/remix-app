@@ -19,14 +19,6 @@ export default defineConfig({
         v3_singleFetch: true,
         v3_lazyRouteDiscovery: true,
       },
-      ignoredRouteFiles: ["**/*"],
-      routes: async (defineRoutes) => {
-          const route = flatRoutes("routes", defineRoutes, {
-              paramPrefixChar: "@",
-          });
-          // console.log(route);
-          return route;
-      },
     }),
     tsconfigPaths(),
   ],
